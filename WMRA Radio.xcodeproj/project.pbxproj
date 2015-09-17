@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		522892311AA40FC8003DCCFE /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 522892301AA40FC8003DCCFE /* JCRBlurView.m */; };
+		525BAAB41A48FF020032BB2D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BAAB31A48FF020032BB2D /* SwiftyJSON.swift */; };
+		526A5EF21A2F9161006F416A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A5EF11A2F9161006F416A /* AppDelegate.swift */; };
+		526A5EF51A2F9161006F416A /* WMRA_Radio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 526A5EF31A2F9161006F416A /* WMRA_Radio.xcdatamodeld */; };
+		526A5EFC1A2F9161006F416A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526A5EFB1A2F9161006F416A /* Images.xcassets */; };
+		526A5EFF1A2F9161006F416A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526A5EFD1A2F9161006F416A /* LaunchScreen.xib */; };
+		526A5F0B1A2F9161006F416A /* WMRA_RadioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A5F0A1A2F9161006F416A /* WMRA_RadioTests.swift */; };
+		529ED1AA1A805A1F00BEA3FA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529ED1A91A805A1F00BEA3FA /* CoreMedia.framework */; };
+		529FCB871A3630C500A449CB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529FCB861A3630C500A449CB /* MediaPlayer.framework */; };
+		529FCB8B1A36323700A449CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529FCB8A1A36323700A449CB /* AVFoundation.framework */; };
+		529FCB8D1A36353E00A449CB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529FCB8C1A36353E00A449CB /* AudioToolbox.framework */; };
+		52A045F81AEA8804008C33B5 /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A045F71AEA8804008C33B5 /* MarqueeLabel.swift */; };
+		52DB712D1A452355004AA282 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DB712C1A452355004AA282 /* QuartzCore.framework */; };
+		52DB712E1A466B64004AA282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A5EF61A2F9161006F416A /* ViewController.swift */; };
+		52ECBE151A4A2AFB00B936B8 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBDF51A4A2AFB00B936B8 /* MKAnnotationView+WebCache.m */; };
+		52ECBE161A4A2AFB00B936B8 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBDF71A4A2AFB00B936B8 /* NSData+ImageContentType.m */; };
+		52ECBE171A4A2AFB00B936B8 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBDF91A4A2AFB00B936B8 /* SDImageCache.m */; };
+		52ECBE181A4A2AFB00B936B8 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBDFB1A4A2AFB00B936B8 /* SDWebImageCompat.m */; };
+		52ECBE191A4A2AFB00B936B8 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBDFD1A4A2AFB00B936B8 /* SDWebImageDecoder.m */; };
+		52ECBE1A1A4A2AFB00B936B8 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBDFF1A4A2AFB00B936B8 /* SDWebImageDownloader.m */; };
+		52ECBE1B1A4A2AFB00B936B8 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE011A4A2AFB00B936B8 /* SDWebImageDownloaderOperation.m */; };
+		52ECBE1C1A4A2AFB00B936B8 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE031A4A2AFB00B936B8 /* SDWebImageManager.m */; };
+		52ECBE1D1A4A2AFB00B936B8 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE061A4A2AFB00B936B8 /* SDWebImagePrefetcher.m */; };
+		52ECBE1E1A4A2AFB00B936B8 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE081A4A2AFB00B936B8 /* UIButton+WebCache.m */; };
+		52ECBE1F1A4A2AFB00B936B8 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE0A1A4A2AFB00B936B8 /* UIImage+GIF.m */; };
+		52ECBE201A4A2AFB00B936B8 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE0C1A4A2AFB00B936B8 /* UIImage+MultiFormat.m */; };
+		52ECBE211A4A2AFB00B936B8 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE0E1A4A2AFB00B936B8 /* UIImage+WebP.m */; };
+		52ECBE221A4A2AFB00B936B8 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE101A4A2AFB00B936B8 /* UIImageView+HighlightedWebCache.m */; };
+		52ECBE231A4A2AFB00B936B8 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE121A4A2AFB00B936B8 /* UIImageView+WebCache.m */; };
+		52ECBE241A4A2AFB00B936B8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ECBE141A4A2AFB00B936B8 /* UIView+WebCacheOperation.m */; };
+		52EDF45E1B190BA4007C7A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EDF45C1B190BA4007C7A30 /* Main.storyboard */; };
+		52FB0C611A4A56560091DFC8 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FB0C601A4A56560091DFC8 /* NSString+HTML.m */; };
+		52FB0C641A4A57810091DFC8 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FB0C631A4A57810091DFC8 /* GTMNSString+HTML.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		526A5F051A2F9161006F416A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526A5EE41A2F9161006F416A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526A5EEB1A2F9161006F416A;
+			remoteInfo = "WMRA Radio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5228922F1AA40FC8003DCCFE /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
+		522892301AA40FC8003DCCFE /* JCRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRBlurView.m; sourceTree = "<group>"; };
+		525BAAB31A48FF020032BB2D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		526A5EEC1A2F9161006F416A /* WMRA Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WMRA Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		526A5EF01A2F9161006F416A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526A5EF11A2F9161006F416A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		526A5EF41A2F9161006F416A /* WMRA_Radio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WMRA_Radio.xcdatamodel; sourceTree = "<group>"; };
+		526A5EF61A2F9161006F416A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		526A5EFB1A2F9161006F416A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		526A5EFE1A2F9161006F416A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		526A5F041A2F9161006F416A /* WMRA RadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WMRA RadioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		526A5F091A2F9161006F416A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526A5F0A1A2F9161006F416A /* WMRA_RadioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMRA_RadioTests.swift; sourceTree = "<group>"; };
+		529ED1A91A805A1F00BEA3FA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		529FCB861A3630C500A449CB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		529FCB8A1A36323700A449CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		529FCB8C1A36353E00A449CB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		529FCB8E1A36353E00A449CB /* WMRA Radio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WMRA Radio.entitlements"; sourceTree = "<group>"; };
+		52A045F71AEA8804008C33B5 /* MarqueeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
+		52AEF70D1A47B4E5003D7951 /* WMRA Radio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WMRA Radio-Bridging-Header.h"; sourceTree = "<group>"; };
+		52DB712C1A452355004AA282 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		52DB71331A467B5F004AA282 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52ECBDF41A4A2AFB00B936B8 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		52ECBDF51A4A2AFB00B936B8 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		52ECBDF61A4A2AFB00B936B8 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		52ECBDF71A4A2AFB00B936B8 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		52ECBDF81A4A2AFB00B936B8 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		52ECBDF91A4A2AFB00B936B8 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		52ECBDFA1A4A2AFB00B936B8 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		52ECBDFB1A4A2AFB00B936B8 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		52ECBDFC1A4A2AFB00B936B8 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		52ECBDFD1A4A2AFB00B936B8 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		52ECBDFE1A4A2AFB00B936B8 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		52ECBDFF1A4A2AFB00B936B8 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		52ECBE001A4A2AFB00B936B8 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		52ECBE011A4A2AFB00B936B8 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		52ECBE021A4A2AFB00B936B8 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		52ECBE031A4A2AFB00B936B8 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		52ECBE041A4A2AFB00B936B8 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		52ECBE051A4A2AFB00B936B8 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		52ECBE061A4A2AFB00B936B8 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		52ECBE071A4A2AFB00B936B8 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		52ECBE081A4A2AFB00B936B8 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		52ECBE091A4A2AFB00B936B8 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		52ECBE0A1A4A2AFB00B936B8 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		52ECBE0B1A4A2AFB00B936B8 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		52ECBE0C1A4A2AFB00B936B8 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		52ECBE0D1A4A2AFB00B936B8 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		52ECBE0E1A4A2AFB00B936B8 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		52ECBE0F1A4A2AFB00B936B8 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		52ECBE101A4A2AFB00B936B8 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		52ECBE111A4A2AFB00B936B8 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		52ECBE121A4A2AFB00B936B8 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		52ECBE131A4A2AFB00B936B8 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		52ECBE141A4A2AFB00B936B8 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		52EDF45D1B190BA4007C7A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52FB0C5F1A4A56560091DFC8 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		52FB0C601A4A56560091DFC8 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		52FB0C621A4A57810091DFC8 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		52FB0C631A4A57810091DFC8 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		526A5EE91A2F9161006F416A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529ED1AA1A805A1F00BEA3FA /* CoreMedia.framework in Frameworks */,
+				52DB712D1A452355004AA282 /* QuartzCore.framework in Frameworks */,
+				529FCB8B1A36323700A449CB /* AVFoundation.framework in Frameworks */,
+				529FCB871A3630C500A449CB /* MediaPlayer.framework in Frameworks */,
+				529FCB8D1A36353E00A449CB /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526A5F011A2F9161006F416A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		526A5EE31A2F9161006F416A = {
+			isa = PBXGroup;
+			children = (
+				526A5EEE1A2F9161006F416A /* WMRA Radio */,
+				526A5F071A2F9161006F416A /* WMRA RadioTests */,
+				526A5EED1A2F9161006F416A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		526A5EED1A2F9161006F416A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				526A5EEC1A2F9161006F416A /* WMRA Radio.app */,
+				526A5F041A2F9161006F416A /* WMRA RadioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		526A5EEE1A2F9161006F416A /* WMRA Radio */ = {
+			isa = PBXGroup;
+			children = (
+				529FCB8E1A36353E00A449CB /* WMRA Radio.entitlements */,
+				526A5EF11A2F9161006F416A /* AppDelegate.swift */,
+				526A5EF61A2F9161006F416A /* ViewController.swift */,
+				526A5EFB1A2F9161006F416A /* Images.xcassets */,
+				52EDF45C1B190BA4007C7A30 /* Main.storyboard */,
+				526A5EFD1A2F9161006F416A /* LaunchScreen.xib */,
+				526A5EF31A2F9161006F416A /* WMRA_Radio.xcdatamodeld */,
+				529ED1A91A805A1F00BEA3FA /* CoreMedia.framework */,
+				52DB71331A467B5F004AA282 /* Foundation.framework */,
+				52DB712C1A452355004AA282 /* QuartzCore.framework */,
+				529FCB8C1A36353E00A449CB /* AudioToolbox.framework */,
+				529FCB8A1A36323700A449CB /* AVFoundation.framework */,
+				529FCB861A3630C500A449CB /* MediaPlayer.framework */,
+				526A5EEF1A2F9161006F416A /* Supporting Files */,
+				52AEF70D1A47B4E5003D7951 /* WMRA Radio-Bridging-Header.h */,
+			);
+			path = "WMRA Radio";
+			sourceTree = "<group>";
+		};
+		526A5EEF1A2F9161006F416A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				525BAAB31A48FF020032BB2D /* SwiftyJSON.swift */,
+				52A045F71AEA8804008C33B5 /* MarqueeLabel.swift */,
+				5228922F1AA40FC8003DCCFE /* JCRBlurView.h */,
+				522892301AA40FC8003DCCFE /* JCRBlurView.m */,
+				52FB0C5F1A4A56560091DFC8 /* NSString+HTML.h */,
+				52FB0C601A4A56560091DFC8 /* NSString+HTML.m */,
+				52FB0C621A4A57810091DFC8 /* GTMNSString+HTML.h */,
+				52FB0C631A4A57810091DFC8 /* GTMNSString+HTML.m */,
+				52ECBDF31A4A2AFB00B936B8 /* SDWebImage */,
+				526A5EF01A2F9161006F416A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		526A5F071A2F9161006F416A /* WMRA RadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				526A5F0A1A2F9161006F416A /* WMRA_RadioTests.swift */,
+				526A5F081A2F9161006F416A /* Supporting Files */,
+			);
+			path = "WMRA RadioTests";
+			sourceTree = "<group>";
+		};
+		526A5F081A2F9161006F416A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				526A5F091A2F9161006F416A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52ECBDF31A4A2AFB00B936B8 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				52ECBDF41A4A2AFB00B936B8 /* MKAnnotationView+WebCache.h */,
+				52ECBDF51A4A2AFB00B936B8 /* MKAnnotationView+WebCache.m */,
+				52ECBDF61A4A2AFB00B936B8 /* NSData+ImageContentType.h */,
+				52ECBDF71A4A2AFB00B936B8 /* NSData+ImageContentType.m */,
+				52ECBDF81A4A2AFB00B936B8 /* SDImageCache.h */,
+				52ECBDF91A4A2AFB00B936B8 /* SDImageCache.m */,
+				52ECBDFA1A4A2AFB00B936B8 /* SDWebImageCompat.h */,
+				52ECBDFB1A4A2AFB00B936B8 /* SDWebImageCompat.m */,
+				52ECBDFC1A4A2AFB00B936B8 /* SDWebImageDecoder.h */,
+				52ECBDFD1A4A2AFB00B936B8 /* SDWebImageDecoder.m */,
+				52ECBDFE1A4A2AFB00B936B8 /* SDWebImageDownloader.h */,
+				52ECBDFF1A4A2AFB00B936B8 /* SDWebImageDownloader.m */,
+				52ECBE001A4A2AFB00B936B8 /* SDWebImageDownloaderOperation.h */,
+				52ECBE011A4A2AFB00B936B8 /* SDWebImageDownloaderOperation.m */,
+				52ECBE021A4A2AFB00B936B8 /* SDWebImageManager.h */,
+				52ECBE031A4A2AFB00B936B8 /* SDWebImageManager.m */,
+				52ECBE041A4A2AFB00B936B8 /* SDWebImageOperation.h */,
+				52ECBE051A4A2AFB00B936B8 /* SDWebImagePrefetcher.h */,
+				52ECBE061A4A2AFB00B936B8 /* SDWebImagePrefetcher.m */,
+				52ECBE071A4A2AFB00B936B8 /* UIButton+WebCache.h */,
+				52ECBE081A4A2AFB00B936B8 /* UIButton+WebCache.m */,
+				52ECBE091A4A2AFB00B936B8 /* UIImage+GIF.h */,
+				52ECBE0A1A4A2AFB00B936B8 /* UIImage+GIF.m */,
+				52ECBE0B1A4A2AFB00B936B8 /* UIImage+MultiFormat.h */,
+				52ECBE0C1A4A2AFB00B936B8 /* UIImage+MultiFormat.m */,
+				52ECBE0D1A4A2AFB00B936B8 /* UIImage+WebP.h */,
+				52ECBE0E1A4A2AFB00B936B8 /* UIImage+WebP.m */,
+				52ECBE0F1A4A2AFB00B936B8 /* UIImageView+HighlightedWebCache.h */,
+				52ECBE101A4A2AFB00B936B8 /* UIImageView+HighlightedWebCache.m */,
+				52ECBE111A4A2AFB00B936B8 /* UIImageView+WebCache.h */,
+				52ECBE121A4A2AFB00B936B8 /* UIImageView+WebCache.m */,
+				52ECBE131A4A2AFB00B936B8 /* UIView+WebCacheOperation.h */,
+				52ECBE141A4A2AFB00B936B8 /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		526A5EEB1A2F9161006F416A /* WMRA Radio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526A5F0E1A2F9161006F416A /* Build configuration list for PBXNativeTarget "WMRA Radio" */;
+			buildPhases = (
+				526A5EE81A2F9161006F416A /* Sources */,
+				526A5EE91A2F9161006F416A /* Frameworks */,
+				526A5EEA1A2F9161006F416A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WMRA Radio";
+			productName = "WMRA Radio";
+			productReference = 526A5EEC1A2F9161006F416A /* WMRA Radio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		526A5F031A2F9161006F416A /* WMRA RadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526A5F111A2F9161006F416A /* Build configuration list for PBXNativeTarget "WMRA RadioTests" */;
+			buildPhases = (
+				526A5F001A2F9161006F416A /* Sources */,
+				526A5F011A2F9161006F416A /* Frameworks */,
+				526A5F021A2F9161006F416A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526A5F061A2F9161006F416A /* PBXTargetDependency */,
+			);
+			name = "WMRA RadioTests";
+			productName = "WMRA RadioTests";
+			productReference = 526A5F041A2F9161006F416A /* WMRA RadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526A5EE41A2F9161006F416A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "James Madison University";
+				TargetAttributes = {
+					526A5EEB1A2F9161006F416A = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 22D6389V4P;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
+					526A5F031A2F9161006F416A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 526A5EEB1A2F9161006F416A;
+					};
+				};
+			};
+			buildConfigurationList = 526A5EE71A2F9161006F416A /* Build configuration list for PBXProject "WMRA Radio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 526A5EE31A2F9161006F416A;
+			productRefGroup = 526A5EED1A2F9161006F416A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				526A5EEB1A2F9161006F416A /* WMRA Radio */,
+				526A5F031A2F9161006F416A /* WMRA RadioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		526A5EEA1A2F9161006F416A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EDF45E1B190BA4007C7A30 /* Main.storyboard in Resources */,
+				526A5EFF1A2F9161006F416A /* LaunchScreen.xib in Resources */,
+				526A5EFC1A2F9161006F416A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526A5F021A2F9161006F416A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		526A5EE81A2F9161006F416A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ECBE221A4A2AFB00B936B8 /* UIImageView+HighlightedWebCache.m in Sources */,
+				52ECBE201A4A2AFB00B936B8 /* UIImage+MultiFormat.m in Sources */,
+				52ECBE1B1A4A2AFB00B936B8 /* SDWebImageDownloaderOperation.m in Sources */,
+				52DB712E1A466B64004AA282 /* ViewController.swift in Sources */,
+				52ECBE181A4A2AFB00B936B8 /* SDWebImageCompat.m in Sources */,
+				52ECBE1F1A4A2AFB00B936B8 /* UIImage+GIF.m in Sources */,
+				52ECBE1D1A4A2AFB00B936B8 /* SDWebImagePrefetcher.m in Sources */,
+				526A5EF51A2F9161006F416A /* WMRA_Radio.xcdatamodeld in Sources */,
+				526A5EF21A2F9161006F416A /* AppDelegate.swift in Sources */,
+				52ECBE211A4A2AFB00B936B8 /* UIImage+WebP.m in Sources */,
+				522892311AA40FC8003DCCFE /* JCRBlurView.m in Sources */,
+				52FB0C611A4A56560091DFC8 /* NSString+HTML.m in Sources */,
+				52ECBE231A4A2AFB00B936B8 /* UIImageView+WebCache.m in Sources */,
+				52ECBE1A1A4A2AFB00B936B8 /* SDWebImageDownloader.m in Sources */,
+				52ECBE241A4A2AFB00B936B8 /* UIView+WebCacheOperation.m in Sources */,
+				52ECBE1E1A4A2AFB00B936B8 /* UIButton+WebCache.m in Sources */,
+				52FB0C641A4A57810091DFC8 /* GTMNSString+HTML.m in Sources */,
+				52ECBE151A4A2AFB00B936B8 /* MKAnnotationView+WebCache.m in Sources */,
+				52ECBE161A4A2AFB00B936B8 /* NSData+ImageContentType.m in Sources */,
+				525BAAB41A48FF020032BB2D /* SwiftyJSON.swift in Sources */,
+				52ECBE1C1A4A2AFB00B936B8 /* SDWebImageManager.m in Sources */,
+				52A045F81AEA8804008C33B5 /* MarqueeLabel.swift in Sources */,
+				52ECBE191A4A2AFB00B936B8 /* SDWebImageDecoder.m in Sources */,
+				52ECBE171A4A2AFB00B936B8 /* SDImageCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526A5F001A2F9161006F416A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526A5F0B1A2F9161006F416A /* WMRA_RadioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		526A5F061A2F9161006F416A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526A5EEB1A2F9161006F416A /* WMRA Radio */;
+			targetProxy = 526A5F051A2F9161006F416A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		526A5EFD1A2F9161006F416A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526A5EFE1A2F9161006F416A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		52EDF45C1B190BA4007C7A30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52EDF45D1B190BA4007C7A30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		526A5F0C1A2F9161006F416A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		526A5F0D1A2F9161006F416A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		526A5F0F1A2F9161006F416A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "WMRA Radio/WMRA Radio.entitlements";
+				CODE_SIGN_IDENTITY = "iOS Development: Linzy Cumbia (LBFYYB6U6D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iOS Development: Linzy Cumbia (LBFYYB6U6D)";
+				INFOPLIST_FILE = "WMRA Radio/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "WMRA Radio/WMRA Radio-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		526A5F101A2F9161006F416A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "WMRA Radio/WMRA Radio.entitlements";
+				CODE_SIGN_IDENTITY = "iOS Development: Linzy Cumbia (LBFYYB6U6D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iOS Development: Linzy Cumbia (LBFYYB6U6D)";
+				INFOPLIST_FILE = "WMRA Radio/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "WMRA Radio/WMRA Radio-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		526A5F121A2F9161006F416A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WMRA RadioTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WMRA Radio.app/WMRA Radio";
+			};
+			name = Debug;
+		};
+		526A5F131A2F9161006F416A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WMRA RadioTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WMRA Radio.app/WMRA Radio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		526A5EE71A2F9161006F416A /* Build configuration list for PBXProject "WMRA Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526A5F0C1A2F9161006F416A /* Debug */,
+				526A5F0D1A2F9161006F416A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526A5F0E1A2F9161006F416A /* Build configuration list for PBXNativeTarget "WMRA Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526A5F0F1A2F9161006F416A /* Debug */,
+				526A5F101A2F9161006F416A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526A5F111A2F9161006F416A /* Build configuration list for PBXNativeTarget "WMRA RadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526A5F121A2F9161006F416A /* Debug */,
+				526A5F131A2F9161006F416A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		526A5EF31A2F9161006F416A /* WMRA_Radio.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				526A5EF41A2F9161006F416A /* WMRA_Radio.xcdatamodel */,
+			);
+			currentVersion = 526A5EF41A2F9161006F416A /* WMRA_Radio.xcdatamodel */;
+			path = WMRA_Radio.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 526A5EE41A2F9161006F416A /* Project object */;
+}

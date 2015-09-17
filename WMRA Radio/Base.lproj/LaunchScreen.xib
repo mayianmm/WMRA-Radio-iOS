@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOO-Cg-LUo">
+                    <rect key="frame" x="0.0" y="380" width="480" height="100"/>
+                    <color key="backgroundColor" red="0.36862745099999999" green="0.40784313729999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="hW4-xj-QaF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fsc-aS-yNR">
+                    <rect key="frame" x="0.0" y="29" width="480" height="46"/>
+                    <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="8DY-gJ-6mQ"/>
+                        <constraint firstAttribute="height" constant="72" id="ROb-Dh-GfP"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ROb-Dh-GfP"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="8DY-gJ-6mQ"/>
+                            <include reference="ROb-Dh-GfP"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPS-F8-EwB">
+                    <rect key="frame" x="173" y="25" width="135" height="54"/>
+                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="2ly-6w-0Cd">
+                            <variation key="widthClass=regular" constant="185"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="56" id="Sbg-GY-NOB">
+                            <variation key="widthClass=regular" constant="85"/>
+                        </constraint>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gPS-F8-EwB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="C0o-Kv-g0e">
+                    <variation key="widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="Fsc-aS-yNR" secondAttribute="trailing" id="JrN-rz-6Q4"/>
+                <constraint firstAttribute="centerX" secondItem="gPS-F8-EwB" secondAttribute="centerX" id="K0g-zU-U92"/>
+                <constraint firstAttribute="centerX" secondItem="tOO-Cg-LUo" secondAttribute="centerX" id="Mi2-Mx-kte"/>
+                <constraint firstItem="Fsc-aS-yNR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rcx-4E-UIZ"/>
+                <constraint firstAttribute="bottom" secondItem="tOO-Cg-LUo" secondAttribute="bottom" id="gLb-Q9-TtU"/>
+                <constraint firstItem="Fsc-aS-yNR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="nTl-X6-rQL">
+                    <variation key="widthClass=regular" constant="27"/>
+                </constraint>
+                <constraint firstItem="tOO-Cg-LUo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sBU-1c-Y6t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+</document>
